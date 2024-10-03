@@ -1,0 +1,11 @@
+[Unit]
+Description=usb update
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/lcfm/Desktop/usbUpdateService.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

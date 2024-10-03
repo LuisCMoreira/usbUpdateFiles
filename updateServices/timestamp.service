@@ -1,0 +1,11 @@
+[Unit]
+Description=timestamp
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/lcfm/Desktop/myFolder/timestampPost.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
