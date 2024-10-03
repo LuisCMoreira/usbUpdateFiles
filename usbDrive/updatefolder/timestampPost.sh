@@ -7,7 +7,7 @@ while true; do
     str_output="Hello World! $unix_timestamp"
 
     # Write to a shell script to set the environment variable
-    echo "export helloworldpy=\"$str_output\"" | sudo tee set_env.sh > /dev/null
+    echo "export helloworldpy=\"$str_output\""
     
     # Print the output to console (optional)
     echo "$str_output"
